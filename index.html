@@ -1,0 +1,144 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Барбершоп "Бородинский"</title>
+</head>
+
+<body>
+
+    <header class="mainHeader">
+        <!-- часть main характеризует эту шапку, как главную в документе -->
+        <div class="container">
+            <!-- декоративный класс для центровки -->
+            <nav class="mainNavigator">
+                <ul>
+                    <li><a href="#">Информация</a></li>
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="#">Прайс-лист</a></li>
+                    <li><a href="#">Магазин</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </nav>
+
+            <div class="userBlock">
+                <a class="login" href="#">Вход</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="indexLogo">
+            <img src="img/indexLogo.png" width="368" height="204" alt="Барбершоп ''Бородинский''">
+        </div>
+
+        <section class="features">
+            <div class="featuresItem">
+                <b class="featuresName">Быстро</b>
+                <p>Мы сделаем свою работу быстро! Два часа пролетят незаметно и вы - счастливый обладатель стильной стрижки-минутки</p>
+                <!-- Текст длиной в предложение или несколько - идеально подходит под абзац -->
+            </div>
+
+            <div class="featuresItem">
+                <b class="featuresName">Круто</b>
+                <p>Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино! Во всяком случае внешне.</p>
+            </div>
+
+            <div class="featuresItem">
+                <b class="featuresName">Дорого</b>
+                <p>Наши мастера - профессионалы своего дела и не могут стоить дешево. К тому же, разве цена не дает определенный статус?</p>
+            </div>
+        </section>
+
+        <div class="indexContent">
+            <div class="indexContentLeft">
+                <h2 class="indexContentTitle">Новости</h2>
+                <ul class="newsPreview">
+                    <li>
+                        <p>Нам наконец завезли Ягермайстер! Теперь вы можете пропустить стаканчик во время стрижки</p>
+                        <time datetime="2016-01-11">11 января</time>
+                        <!-- тег для указания даты -->
+                    </li>
+
+                    <li>
+                        <p>В нашей команде пополнение, Борис ''Бритва'' Стригунец, обладатель множества титулов и наград пополнил наши стройные ряды</p>
+                        <time datetime="2016-01-18">18 января</time>
+                        <!-- тег для указания даты -->
+                    </li>
+                </ul>
+                <a class="btn" href="#">Все новости</a>
+                <!-- btn - класс ссылки(кнопки), ведущей на другую страницу -->
+            </div>
+
+            <div class="indexContentRight">
+                <h2 class="indexContentTitle">Фотогалерея</h2>
+                <div class="gallery">
+                    <figure class="galleryContent">
+                        <!-- Контейнер содержательных картинок -->
+                        <img src="img/photo-1.jpg" width="286" height="164" alt="Фото 1">
+                    </figure>
+                    <button class="btn galleryPrev">Назад</button>
+                    <!-- делаем кнопку, а не ссылку, т.к. не будет перехода, а будет листание -->
+                    <button class="btn galleryNext">Вперед</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="indexContent">
+            <div class="indexContentLeft">
+                <h2 class="indexContentTitle">Контактная информация</h2>
+                <p>
+                    Барбершоп ''Бородинский''<br> Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br> Телефон: +7 (812) 666-02-66
+                </p>
+
+                <p>
+                    Время работы:<br> пн - пт: с 10:00 до 22:00 <br> сб - вс: с 10:00 до 19:00
+                </p>
+                <a class="btn" href="#">Как проехать</a>
+                <a class="btn" href="#">Обратная связь</a>
+            </div>
+
+            <div class="indexContentRight">
+                <h2 class="indexContentTitle">Записаться</h2>
+                <p>Укажите желаемую дату и мы свяжемся с вами для подтверждения брони</p>
+                <form class="appointmentForm" action="#" method="post">
+                    <input type="text" name="date" placeholder="Дата">
+                    <!-- подумать над нужностью класса для данных текстовых полей формы-->
+                    <input type="text" name="time" placeholder="Время">
+                    <input type="text" name="name" placeholder="Ваше имя">
+                    <input type="tel" name="phone" placeholder="Телефон">
+                    <!-- тип поля tel переключает клавиатуру мобильного на цифровую -->
+                    <button class="btn" type="submit">Отправить</button>
+                    <!--  проверить button type submit и сравнить с input type submit  -->
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="mainFooter">
+        <div class="container">
+            <section class="footerContacts">
+                <!-- смысловые блоки, поэтому секции. Хотя обычно все ставят div -->
+                Барбершоп ''Бородинский''<br> Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+                <a href="#">Как нас найти?</a><br> Телефон: +7 (812) 666-02-66
+            </section>
+
+            <section class="footerSocial">
+                <p>Давайте дружить!</p>
+                <a class="socialBtn socialBtnVk" href="#">ВКонтакте</a>
+                <a class="socialBtn socialBtnFb" href="#">Фейсбук</a>
+                <a class="socialBtn socialBtnInst" href="#">Инстаграм</a>
+            </section>
+
+            <section class="footerCopyright">
+                <p>Разработано:</p>
+                <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
+
+            </section>
+        </div>
+    </footer>
+
+</body>
+
+</html>
