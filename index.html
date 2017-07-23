@@ -3,15 +3,17 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Барбершоп "Бородинский"</title>
+    <title>Барбершоп «Бородинский»</title>
 </head>
 
 <body>
 
     <header class="mainHeader">
-        <!-- часть main характеризует эту шапку, как главную в документе -->
         <div class="container">
-            <!-- декоративный класс для центровки -->
+            <div class="mainRef">
+                <a href="#">Барбершоп</a>
+                <!-- вставить картинку -->
+            </div>
             <nav class="mainNavigator">
                 <ul>
                     <li><a href="#">Информация</a></li>
@@ -21,16 +23,15 @@
                     <li><a href="#">Контакты</a></li>
                 </ul>
             </nav>
-
             <div class="userBlock">
                 <a class="login" href="#">Вход</a>
             </div>
         </div>
     </header>
 
-    <main class="container">
+    <main class="container main">
         <div class="indexLogo">
-            <img src="img/indexLogo.png" width="368" height="204" alt="Барбершоп ''Бородинский''">
+            <img src="img/indexLogo.png" width="368" height="204" alt="Барбершоп «Бородинский»">
         </div>
 
         <section class="features">
@@ -62,7 +63,7 @@
                     </li>
 
                     <li>
-                        <p>В нашей команде пополнение, Борис ''Бритва'' Стригунец, обладатель множества титулов и наград пополнил наши стройные ряды</p>
+                        <p>В нашей команде пополнение, Борис «Бритва» Стригунец, обладатель множества титулов и наград пополнил наши стройные ряды</p>
                         <time datetime="2016-01-18">18 января</time>
                         <!-- тег для указания даты -->
                     </li>
@@ -78,9 +79,9 @@
                         <!-- Контейнер содержательных картинок -->
                         <img src="img/photo-1.jpg" width="286" height="164" alt="Фото 1">
                     </figure>
-                    <button class="btn galleryPrev">Назад</button>
+                    <button class="btn galleryPrev" type="button">Назад</button>
                     <!-- делаем кнопку, а не ссылку, т.к. не будет перехода, а будет листание -->
-                    <button class="btn galleryNext">Вперед</button>
+                    <button class="btn galleryNext" type="button">Вперед</button>
                 </div>
             </div>
         </div>
@@ -89,7 +90,7 @@
             <div class="indexContentLeft">
                 <h2 class="indexContentTitle">Контактная информация</h2>
                 <p>
-                    Барбершоп ''Бородинский''<br> Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br> Телефон: +7 (812) 666-02-66
+                    Барбершоп «Бородинский»<br> Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br> Телефон: +7 (812) 666-02-66
                 </p>
 
                 <p>
@@ -120,7 +121,7 @@
         <div class="container">
             <section class="footerContacts">
                 <!-- смысловые блоки, поэтому секции. Хотя обычно все ставят div -->
-                Барбершоп ''Бородинский''<br> Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+                Барбершоп «Бородинский»<br> Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
                 <a href="#">Как нас найти?</a><br> Телефон: +7 (812) 666-02-66
             </section>
 
