@@ -1,0 +1,192 @@
+html,body{
+    height: 100%;
+    margin:0;
+    font-family: 'PT Sans Narrow', sans-serif;
+    color: white;
+    text-transform: uppercase;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-repeat: no-repeat;
+}
+
+.container {
+    width: 940px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #1f1f1f;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 16px 33px 17px 35px;
+    background-color: black;
+}
+
+.mainHeaderContainer {
+    display: flex;
+    min-height: 72px;
+    justify-content: space-between;
+    margin-bottom: 58px;
+    background-color: black;
+}
+
+.mainNavigator ul {
+    display: flex;
+    margin: 0;
+    min-width: 505px;
+    padding-left: 0;
+    padding-right: 0;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mainNavigator li {
+    list-style: none;
+}
+
+.mainNavigator ul a {
+    display: inline-block;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 27px;
+    padding-top: 27px;
+}
+
+.mainNavigator ul li:first-of-type {
+    padding-left: 30px;
+}
+
+.mainHeaderContainer a{
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.userBlock .login {
+    position: relative;
+    display: inline-block;
+    padding-left: 53px;
+    padding-right: 20px;
+    padding-bottom: 27px;
+    padding-top: 27px;
+}
+
+.userBlock .login:before {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 16px;
+    top: 27px;
+    left: 22px;
+    background-image: url(../images/.icon-login.png);
+}
+
+.indexLogo {
+    line-height: 0;
+    text-align: center;
+    margin-bottom: 22px;
+}
+
+.features {
+    display: flex;
+    min-height: 180px;
+    justify-content: space-between;
+    margin-bottom: 76px;
+}
+
+.featuresItem {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 300px;
+}
+
+.featuresName {
+    font-size: 30px;
+    padding-bottom: 45px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.featuresItem .featuresName:after{
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-color: white;
+    bottom: 0;
+    left: 50%;
+    margin-left: -10px;
+    transform: rotate(45deg);
+}
+
+.featuresItem p {
+    font-size: 14px;
+    line-height: 25px;            /*Убрать размер*/
+    margin:0;
+}
+
+.indexContent {
+    padding: 50px 80px 54px;
+    margin-bottom: 34px;
+    display: flex;
+}
+
+.indexContent .indexContentLeft {
+    width: 380px;
+    margin-right: 90px;
+}
+
+.indexContentLeft .newsPreview {
+    margin-bottom: 34px;
+}
+
+.indexContentLeft {
+    padding-top: 50px;
+}
+
+.indexContentLeft h2 {
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.indexContentLeft ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.indexContentLeft li {
+    margin-bottom: 28px;
+}
+
+.newsPreview p {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 24px;
+    margin-bottom: 2px;
+}
+
+.newsPreview time {
+    display: inline-block;
+    font-size: 14px;
+    text-transform: none;
+}
+
+.indexContentLeft .btn {
+    margin-bottom: 54px;
+}
+
+.indexContent .indexContentRight {
+    width: 380px;
+    margin-left: 90px;
+}
+
+
+
