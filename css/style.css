@@ -14,7 +14,10 @@ body {
     display: flex;
     flex-direction: column;
 
+    
+    background: url(../images/body-bg-60.jpg) #070707;
     background-repeat: no-repeat;
+    background-position-x: center;
 }
 
 .container {
@@ -22,8 +25,6 @@ body {
     margin: 0 auto;
     padding-right: 10px;
     padding-left: 10px;
-
-    background-color: #1f1f1f;
 }
 
 .btn {
@@ -51,11 +52,21 @@ body {
     cursor: pointer;
 }
 
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.mainHeader {
+    width: 100%;
+    margin-bottom: 58px;
+    background-color: black;
+}
+
 .mainHeaderContainer {
     display: flex;
 
     min-height: 72px;
-    margin-bottom: 58px;
 
     background-color: black;
 
@@ -86,6 +97,10 @@ body {
     padding-right: 20px;
     padding-bottom: 27px;
     padding-left: 20px;
+}
+
+.mainHeader a:hover {
+    background-color: #242424;
 }
 
 .mainNavigator ul li:first-of-type {
@@ -120,6 +135,12 @@ body {
     content: "";
 
     background-image: url(../images/.icon-login.png);
+    
+    opacity: 0.3;
+}
+
+.userBlock .login:hover:before {
+    opacity: 1;
 }
 
 .indexLogo {
@@ -185,7 +206,14 @@ body {
     display: flex;
 
     margin-bottom: 34px;
-    padding: 50px 80px 54px;
+    padding: 50px 80px 63px;
+    
+    background: url(../images/index-content-bg.jpg) white;
+    color: black;
+}
+
+.indexContent:last-of-type {
+    margin-bottom: 64px;
 }
 
 .indexContent .indexContentLeft {
@@ -232,6 +260,7 @@ body {
 .indexContent .indexContentRight {
     width: 380px;
     margin-left: 90px;
+    margin-bottom: 
 }
 
 .indexContentRight p {
@@ -265,7 +294,7 @@ body {
 }
 
 .indexContentLeft .address {
-    margin-bottom: 25px;
+    margin-bottom: 27px;
 }
 
 .indexContentLeft .working-time {
@@ -302,3 +331,85 @@ body {
     margin-top: 15px;
     width: 100%;
 }
+
+.mainFooter, 
+.mainFooterContainer {
+    background: url(../images/footer-bg.png) #222222;
+}
+
+.mainFooterContainer {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 57px;
+    padding-bottom: 38px;
+}
+
+.mainFooterContainer p {
+    margin: 0;
+    font-family: "PT Sans Narrow", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.mainFooterContainer .footerContacts {
+    width: 310px;
+    font-family: "PT Sans Narrow", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 24px;
+    position: relative;
+}
+
+.mainFooterContainer .footerSocial {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 300px;
+    position: relative;
+}
+
+.mainFooterContainer .footerSocial p {
+    text-align: center;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.footerSocial .socialBtn {
+    width: 43px;
+    height: 43px;
+    background-color: black;
+    background-image: url(../images/social-logos.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.footerSocial .socialBtn:hover {
+    filter: invert(100%);
+}
+
+.footerSocial .socialBtnVk {
+    background-position-x: 8px;
+}
+
+.footerSocial .socialBtnFb {
+    margin: 0 6px;
+    background-position-x: -40px;
+}
+
+.footerSocial .socialBtnInst {
+    background-position-x: -89px;
+}
+
+.mainFooterContainer .footerCopyright {
+    text-align: right;
+    width: 310px;
+    position: relative;
+}
+
+.mainFooterContainer .footerCopyright p {
+    margin-right: 31px;
+    margin-bottom: 20px;
+}
+
