@@ -125,7 +125,7 @@
             <section class="footerContacts">
                 <!-- смысловые блоки, поэтому секции. Хотя обычно все ставят div -->
                 Барбершоп «Бородинский»<br>АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8<br>
-                <a href="#">Как нас найти?</a><br> Телефон: +7 (812) 666-02-66
+                <a class="map" href="#">Как нас найти?</a><br> Телефон: +7 (812) 666-02-66
             </section>
 
             <section class="footerSocial">
@@ -155,11 +155,11 @@
                 <div class="password-container">
                     <input class="password" type="password" name="password" placeholder="пароль">
                 </div>
+            <div class="error">Поля "ЛОГИН" и "ПАРОЛЬ" не могут быть пустыми</div>
             <div class="help-field">
                 <label class="remember">
                     <input type="checkbox" name="remember-me" id="remember-me"><span></span>Запомните меня
                 </label>
-                
 
                 <div class="forget-password"> 
                     <a href="#">я забыл пароль</a>
@@ -173,9 +173,11 @@
 
     <div class="popup-map">
         <button type="button" class="popup-close"></button>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m21!1m12!1m3!1d4373.651780993877!2d60.563445630170534!3d56.817109923405475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m6!3e6!4m0!4m3!3m2!1d56.8170985!2d60.5679106!5e0!3m2!1sru!2sru!4v1503336948758" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
     <div class="gray-bg"></div>
-
+    
+    <script src="js/script.js"></script>
 </body>
 
 </html>
